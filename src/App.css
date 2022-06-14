@@ -1,0 +1,439 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.navBar {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.menu li {
+  display: inline;
+}
+
+.menu a {
+  text-decoration: none;
+  text-align: center;
+  color: inherit;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.cart {
+  align-self: center;
+}
+
+.cart a {
+  text-decoration: none;
+  text-align: center;
+  color: inherit;
+  text-transform: uppercase;
+  padding-left: 10px;
+}
+
+.Content {
+  background-image: url(./Image/content.svg);
+  height: 530px;
+  margin-left: 30px;
+  margin-right: 30px;
+  background-position: center;
+}
+
+.ContentText {
+  display: flex;
+  flex-direction: column;
+  padding-top: 130px;
+}
+
+.ContentText h2 {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffff;
+}
+
+.ContentText h1 {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 47px;
+  line-height: 60px;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 40px;
+}
+
+.ContentText p {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 30px;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 15px;
+}
+
+.button {
+  margin-top: 30px;
+}
+
+.button a {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+
+  text-decoration: none;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #ffff;
+  border-radius: 2px;
+  outline: none;
+  background-color: #ffff;
+  color: #1c1c33;
+  text-transform: uppercase;
+}
+
+.linkStory {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.linkStory h2 {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 40px;
+  width: 40%;
+  padding-bottom: 10px;
+  padding-top: 30px;
+}
+
+.linkStory p {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: rgba(29, 31, 46, 0.7);
+  width: 32%;
+  padding-bottom: 20px;
+}
+
+.linkStory a {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  text-align: center;
+  color: #a25f4b;
+  text-decoration: none;
+  border-bottom-style: solid;
+  border-color: #a25f4b;
+  border-width: thin;
+}
+
+.featured {
+  margin-top: 50px;
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #1d1f2e;
+  margin-bottom: 50px;
+}
+
+.mugs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #1d1f2e;
+}
+
+.mugs h2 {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #1d1f2e;
+}
+
+.mugs p {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  color: rgba(29, 31, 46, 0.7);
+}
+
+.mug2 {
+  margin-left: 20px;
+}
+
+.mug2 p {
+  color: #a25f4b;
+  display: inline-block;
+}
+
+.mug2 .crossed {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  color: rgba(29, 31, 46, 0.7);
+  text-decoration: line-through;
+  padding-left: 5px;
+}
+
+.products h2 {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #1d1f2e;
+}
+
+.items {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 100px;
+}
+
+.items .crossed {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  color: rgba(29, 31, 46, 0.7);
+  text-decoration: line-through;
+  padding-left: 5px;
+}
+
+.items h2 {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #1d1f2e;
+}
+
+.items p {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: center;
+  display: inline-block;
+  color: #a25f4b;
+}
+
+.premiumOffer {
+  margin-top: 150px;
+}
+
+.premiumOffer h2 {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #1d1f2e;
+}
+
+.premium {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.blockPictures {
+  display: flex;
+}
+
+.cups {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 20px;
+}
+
+.premiumText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 40%;
+  padding-left: 100px;
+}
+
+.premiumText h3 {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  text-align: start;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #1d1f2e;
+}
+
+.premiumText h2 {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 50px;
+  color: #1d1f2e;
+  text-align: start;
+}
+
+.premiumText p {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: start;
+  color: rgba(29, 31, 46, 0.7);
+}
+
+.premiumText a {
+  background: #1d1f2e;
+  color: #ffffff;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-decoration: none;
+}
+
+.backgr {
+  background-image: url(./Image/typeBack.svg);
+  height: 340px;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.footer {
+  background: #1d1f2e;
+}
+
+.footer h3 {
+  padding-top: 80px;
+  padding-bottom: 15px;
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer h2 {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 50px;
+  padding-bottom: 25px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.footer input {
+  background: #1d1f2e;
+  border: 1px solid #2f303e;
+  width: 350px;
+  height: 50px;
+  margin-left: 10px;
+}
+
+.email {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer button {
+  background: #ffffff;
+  box-shadow: 0px 2px 6px rgb(29 31 46 / 10%);
+  width: 129px;
+  height: 54px;
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #000000;
+}
