@@ -23,31 +23,75 @@ import Content from "./Components/Content/Content";
 import LinkStory from "./Components/LinkStory/LinkStory";
 import Offers from "./Components/Content/Offers/Offers";
 import Footer from "./Components/Footer/Footer";
+import Modal from "./Components/Modal/Modal";
+import { useState } from "react";
+
+let state = {
+  productData: [
+    {
+      id: 1,
+      img: product1,
+      name: "Red Love Cup",
+      price: "$25.00",
+      crossedPrice: "$37.00 USD",
+    },
+    {
+      id: 2,
+      img: product2,
+      name: "Black Tea Cup",
+      price: "$25.00",
+      crossedPrice: "$29.00 USD",
+    },
+    {
+      id: 3,
+      img: product3,
+      name: "B&W Essentials Mug",
+      crossedPrice: "$19.00 USD",
+    },
+    { id: 4, img: product4, name: "Winter Style Mug", price: "$25.00" },
+    { id: 5, img: product5, name: "Ceramic Tea", price: "$46.00" },
+    { id: 6, img: product6, name: "No Handle Bar Cup", price: "$34.00" },
+    { id: 7, img: product7, name: "Espresso Cup by Mugs.co", price: "$25.00" },
+    { id: 8, img: product8, name: "Pink Premium Ceramic", price: "$99.00" },
+    { id: 9, img: product9, name: "Summer Designer Cup", price: "$29.00" },
+  ],
+  mugData: [
+    {
+      id: 1,
+      img: mug1,
+      name: "Pink Premium Ceramic",
+      price: "$50.00",
+      crossedPrice: "$69.00 USD",
+    },
+    {
+      id: 2,
+      img: mug2,
+      name: "Golden Designers Mug",
+      price: "$50.00",
+      crossedPrice: "$69.00 USD",
+    },
+  ],
+};
 
 function App() {
+  const [modalActive, setModalActive] = useState();
   return (
     <div className="App">
-      <Header logo={logo} bag={bag} />
+      <Header logo={logo} bag={bag} setActive={setModalActive} />
       <Content />
       <LinkStory />
       <Offers
-        mug1={mug1}
-        mug2={mug2}
-        product1={product1}
-        product2={product2}
-        product3={product3}
-        product4={product4}
-        product5={product5}
-        product6={product6}
-        product7={product7}
-        product8={product8}
-        product9={product9}
+        mugData={state.mugData}
+        productData={state.productData}
         premBook={premBook}
         premCup1={premCup1}
         premCup2={premCup2}
       />
       <div className="backgr"></div>
       <Footer />
+      <Modal active={modalActive} setActive={setModalActive}>
+        lorem
+      </Modal>
     </div>
   );
 }

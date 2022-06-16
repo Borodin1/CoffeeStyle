@@ -4,20 +4,35 @@ import Featured from "./Featured/Featured";
 import Products from "./Products/Products";
 
 const Offers = (props) => {
+  console.log(props);
+  let productsElements = props.productData.map((product) => (
+    <Products
+      key={product.id}
+      img={product.img}
+      name={product.name}
+      price={product.price}
+      crossedPrice={product.crossedPrice}
+    />
+  ));
+  let mugsElements = props.mugData.map((mug) => (
+    <Featured
+      id={mug.id}
+      img={mug.img}
+      name={mug.name}
+      price={mug.price}
+      crossed={mug.crossedPrice}
+    />
+  ));
   return (
     <div className="offers">
-      <Featured mug1={props.mug1} mug2={props.mug2} />
-      <Products
-        product1={props.product1}
-        product2={props.product2}
-        product3={props.product3}
-        product4={props.product4}
-        product5={props.product5}
-        product6={props.product6}
-        product7={props.product7}
-        product8={props.product8}
-        product9={props.product9}
-      />
+      <div className="featured" id="offers">
+        <h2>Featured Mugs</h2>
+        <div className="mugs">{mugsElements}</div>
+      </div>
+      <div className="products">
+        <h2>More Products</h2>
+        <div className="items">{productsElements}</div>
+      </div>
       <Premium
         premBook={props.premBook}
         premCup1={props.premCup1}

@@ -1,10 +1,13 @@
 import React from "react";
 
 const Cart = (props) => {
+  console.log(props);
   return (
     <div className="cart">
-      <img src={props.bag} alt="bag" />
-      <a href="#c">Cart</a>
+      <button className="popUpButton" onClick={() => props.setActive(true)}>
+        <img src={props.bag} alt="bag" />
+        <p>Cart</p>
+      </button>
     </div>
   );
 };

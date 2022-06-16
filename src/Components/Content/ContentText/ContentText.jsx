@@ -10,7 +10,7 @@ const ContentText = () => {
         life, made to move and grow.
       </p>
       <div className="button">
-        <a href="#P">Explore Our Products</a>
+        <a href="#offers">Explore Our Products</a>
       </div>
     </div>
   );
