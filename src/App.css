@@ -478,3 +478,7 @@
 .modalContent.active {
   transform: scale(1);
 }
+
+.header img.shopCart:hover {
+  color: red;
+}

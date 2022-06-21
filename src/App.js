@@ -74,15 +74,31 @@ let state = {
 };
 
 function App() {
-  const [modalActive, setModalActive] = useState();
+  const [modalActive, setModalActive] = useState(false);
+
+  const [dataProduct, setProductData] = useState(state);
+  const addProduct = function () {
+    const newProduct = {
+      id: 10,
+      img: product9,
+      name: "NEW PRODUCT",
+      price: "$10000",
+    };
+    const newData = [...dataProduct.productData, newProduct];
+    const addProd = { ...dataProduct, productData: newData };
+    setProductData(addProd);
+  };
+
   return (
     <div className="App">
+      addProduct()
       <Header logo={logo} bag={bag} setActive={setModalActive} />
       <Content />
       <LinkStory />
       <Offers
         mugData={state.mugData}
-        productData={state.productData}
+        productData={dataProduct.productData}
+        addproduct={addProduct}
         premBook={premBook}
         premCup1={premCup1}
         premCup2={premCup2}

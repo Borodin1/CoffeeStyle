@@ -5,7 +5,7 @@ const Cart = (props) => {
   return (
     <div className="cart">
       <button className="popUpButton" onClick={() => props.setActive(true)}>
-        <img src={props.bag} alt="bag" />
+        <img src={props.bag} alt="bag" className="shop" />
         <p>Cart</p>
       </button>
     </div>

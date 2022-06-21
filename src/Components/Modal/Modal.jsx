@@ -10,10 +10,7 @@ const Modal = ({ active, setActive, children }) => {
         className={active ? "modalContent active" : "modalContent"}
         onClick={(e) => e.stopPropagation()}
       >
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia sit
-        saepe asperiores ipsum sapiente? Tempore numquam nesciunt, sint pariatur
-        reprehenderit dolorem earum consequuntur ipsum placeat amet consectetur
-        labore corporis quis.
+        {children}
       </div>
     </div>
   );

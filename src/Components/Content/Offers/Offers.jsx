@@ -4,7 +4,6 @@ import Featured from "./Featured/Featured";
 import Products from "./Products/Products";
 
 const Offers = (props) => {
-  console.log(props);
   let productsElements = props.productData.map((product) => (
     <Products
       key={product.id}
@@ -32,6 +31,7 @@ const Offers = (props) => {
       <div className="products">
         <h2>More Products</h2>
         <div className="items">{productsElements}</div>
+        <button onClick={props.addProduct}>More</button>
       </div>
       <Premium
         premBook={props.premBook}
